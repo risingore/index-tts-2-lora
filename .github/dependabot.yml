@@ -1,0 +1,34 @@
+# Dependabot configuration — shared baseline.
+#
+# このファイルはツールが生成・配布する (package-ecosystem はプロジェクトの
+# パッケージマネージャに合わせて書き換えられる)。直接編集しても次回の
+# 同期で上書きされる。
+#
+# `open-pull-requests-limit` を低めに保つことで、メンテ可能な PR 数に抑える。
+
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 5
+    labels:
+      - "dependencies"
+    commit-message:
+      prefix: "deps"
+      include: "scope"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+    open-pull-requests-limit: 3
+    labels:
+      - "dependencies"
+      - "ci"
+    commit-message:
+      prefix: "ci"
+      include: "scope"
