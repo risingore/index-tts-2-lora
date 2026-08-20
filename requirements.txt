@@ -1,7 +1,7 @@
 torch>=2.0
 torchaudio>=2.0
 peft>=0.7
-omegaconf>=2.3
+omegaconf>=2.3.1
 transformers>=4.36
 safetensors>=0.4
 huggingface-hub>=0.20
