@@ -5,5 +5,5 @@ omegaconf~=2.3
 transformers~=4.36
 safetensors~=0.4
 huggingface-hub~=0.20
-numpy~=1.24
+numpy~=2.5
 tqdm~=4.65
