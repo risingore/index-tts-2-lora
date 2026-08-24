@@ -1,5 +1,5 @@
 torch~=2.0
-torchaudio~=2.0
+torchaudio~=2.11
 peft~=0.7
 omegaconf~=2.3
 transformers~=4.36
