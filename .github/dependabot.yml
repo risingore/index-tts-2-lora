@@ -20,15 +20,3 @@ updates:
       prefix: "deps"
       include: "scope"
 
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      day: "monday"
-    open-pull-requests-limit: 3
-    labels:
-      - "dependencies"
-      - "ci"
-    commit-message:
-      prefix: "ci"
-      include: "scope"
